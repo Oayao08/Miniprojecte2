@@ -1,0 +1,67 @@
+body {
+  font-family: Garamond, serif;
+  background-color: rgb(224, 223, 166);
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+nav a p {
+  color: rgb(24, 21, 21);
+  font-weight: bold;
+}
+
+.eines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+  justify-content: center;
+  transition: all 0.2s ease; /**Transición suave al pasar el ratón*/
+}
+
+.eines img {
+  display: block;
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.eines article {
+  flex: 0 0 auto;
+}
+
+.eines img:hover {
+  filter: brightness(0.8); /*Esto lo que hace es aumentar el brillo*/
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /*Sombra suave*/
+  transform: scale(1.15); /*Se engranda un  poco efecto visual imagen*/
+}
+
+.gallery article {
+  display: grid;
+  grid-template-columns:subgrid;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.gallery img {
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
