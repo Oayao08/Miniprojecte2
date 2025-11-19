@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", "Merriweather" serif;
+  font-family: "Poppins", sans-serif;
   color: #0b2b5a;
   background-color: #ffffff;
 }
@@ -55,6 +55,15 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+main {
+  margin-top: 20px;
+  background-image: url(../img/fotomain.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .empresa {
